@@ -62,7 +62,7 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 
 		function buildPopover(data, el) {
             popOver.querySelector(".Headings").textContent = ` ${data.Headings}`;
-			popOver.querySelector(".Copy").textContent = `Copy: ${data.Copy}`;
+			popOver.querySelector(".Copy").textContent = ` ${data.Copy}`;
 			popOver.querySelector(".Tools").textContent = `Tools: ${data.Tools}`;
             
             // popOver.querySelector("img").src = `images/${data.graph}`;
@@ -74,6 +74,11 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 
 			/* get help with this section */
 		}
+
+		function closePopover(){
+			popOver.classList.remove('show-popover');
+		  }
+	  
 
 
 			function fetchData() {
@@ -91,14 +96,18 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 				  .catch((err) => console.log(err));
 			}
 
-			//  const portfolio = document.querySelector(".portfolio-wrapper");
+			 const portfolio = document.querySelector(".svg-wrapper");
 
-			//  portfolio.addEventListener("click", function() {
-			//  	console.log(this);
+			// portfolio.addEventListener("click", function() {
+			//   	console.log(this);
 			//  })
 
 			
 			seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
+
+			
+
+			document.querySelector('.popover #close').addEventListener("click",closePopover);
     
 
 })();
