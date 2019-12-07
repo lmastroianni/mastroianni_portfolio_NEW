@@ -7,7 +7,7 @@
     margin: 0; 
    /* display: block; */
    padding: 0;
-   background-color: #fff;
+   /* background-color: #fff; */
    width: 100%;
 } 
 
@@ -515,11 +515,10 @@ padding: 10px;
   #box1 img
   {
      display: flex;
-     flex-direction: row;
+     flex-wrap: wrap;
      width: 30%; 
-
-
   }
+
 
   .about p
   {
@@ -550,7 +549,7 @@ padding: 10px;
   
 }
 
- .popover { 
+ /* .popover { 
   
   position: absolute;
   top: 60%;
@@ -563,6 +562,21 @@ padding: 10px;
   border-radius: 8px;
   padding: 4px;
   margin: 0 auto;
+  color: #2C3C50;
   
-} 
+}  */
 
+.popover #close {
+  float:right;
+  padding:3px;
+  margin:5px 5px 0 0;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.popover .close:hover {
+  font-size: 24px;
+
+}
