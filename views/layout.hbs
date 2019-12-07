@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <!-- import waypoint and greensock -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <title>Lucas Mastroianni</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="hidden">Lucas Mastroianni</h1>
+        {{!-- <div class="sticky"> --}}
+        <header class="mainHeader">
+            <div class="logoHeader">
+                <img src="images/LM.svg" alt="Lucas Logo" height="50" width="51" id="logo">
+            </div>
+          
+            <nav id="mainNav">
+              
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burgerCon">
+                          <ul id="burgerMenu">
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="gallery.html">PORTFOLIO</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                          </ul>
+
+                            </div>
+
+                          <nav class="hidden deskNav">
+                            <h2 class="hidden">Desktop Navigation</h2>
+                            <div id="deskCon">
+                            <ul id="deskMenu">
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="gallery.html">PORTFOLIO</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                          </ul>
+                          {{!-- </div> --}}
+
+                          </nav>
+
+
+              
+                    
+                      
+                  </nav>
+                  </div>
+        </header>
+
+        <section class="banner">
+            <div id="text">
+
+            <h1>Lucas Mastroianni</h1>
+            <h2>Video & Web Design</h2>
+            
+            
+        
+        </div>
+
+
+        </section>
+        
+
+        <section class="portfolioPieces">  
+                <ul>
+                <li>Sort Portfolio:</li>
+         
+                
+                       <li>ALL | </li>
+                       <li>VIDEO | </li>
+                       <li>WEB</li>
+                
+
+                    
+                </ul>
+                        <section class="boxes">
+                          {{#each data}}
+                               <div id="box1">
+                              <img src="images/{{Images}}" width="100" height="100" class="responsive {{1Type}}"> 
+                              <span class="see-more" class="data" data-target="{{ID}}">Read More</span>
+                          <!--type1 is for portoflio functionality-->
+                            </div>
+                            
+                            {{/each}} 
+
+                            
+                            
+                            
+                            {{!-- <div id="box2">
+                              <img src="images/piece2.jpg" height="250" width="1200" alt="sportsnet" class="responsive"> 
+                            </div>
+                            <div id="box3">
+                              <img src="images/piece3.jpg" height="250" width="1200" alt="sportsnet" class="responsive"> 
+                            </div> --}}
+                            {{!-- <div id="box4"></div>
+                            <div id="box5"></div>
+                            <div id="box6"></div>  --}}
+             
+              
+            
+        </section>
+        </section>
+
+        <section class="about">
+            
+           <img src="images/lucas.png" height="100%" width="100%" alt="bio image" class="bio" class="responsive">
+            <p>A video editor and
+                    web designer from Dorchester, Ontario. I am a huge sports fan a die hard Toronto Maple Leafs fan.
+                    
+                    I love advertisement, media, and ultimately how the human
+                    brain perceives these things and how I can use creativity and
+                    innovation to find ways to best influence and satisfy a user or
+                    customer. Whether it is through video content or a project for the web, I am
+                    passionate about producing content of the upmost quality and telling a story in an exceptional way.
+                    
+                   
+
+        </section>
+
+        
+
+        <section class="contact">
+            <h3>LET'S CHAT</h3>
+            
+   <section class="contact-form boxContact">
+        <div class="text">
+          <label>Full Name :</label>
+          <input type="text" name="name" value="" placeholder="Enter Your Name">
+        </div>
+  
+        <div class="text">
+          <label>Email :</label>
+          <input type="email" email="email" value="" placeholder="Email">
+        </div>
+  
+        <div class="text">
+          <label>Message :</label>
+          <textarea placeholder="Enter Your Message"></textarea>
+        </div>
+
+       
+        {{!-- <a class="btn">Send</a> --}}
+
+        <span class="see-more">SEND</span>
+        
+  
+      </section>
+        </section>
+
+        {{!-- <section class="footer">
+            <section id="footerMobile">
+                    <nav id="footerNavMobile">
+                            <h1 class="hidden">Footer Navigation</h1>
+                            <h2>Social</h2>
+                              <ul>
+                                <li><a href="index.html">Github</a></li>
+                              
+                                <li><a href="past_events.html">Instagram</a></li>
+                               
+                            </ul>
+
+                            <h1 class="hidden">Footer Navigation</h1>
+                            <h2>Navigation</h2>
+                              <ul>
+                                <li><a href="index.html">Portfolio</a></li>
+                                <li><a href="about_us.html">About</a></li>
+                                <li><a href="past_events.html">Contact</a></li>
+                               
+                            </ul>
+                          </nav>
+            </section> --}}
+
+        </section>
+<article class="popover">
+  <h3 class="Headings"></h3>
+  <p class="Copy"></p>
+  <p class="Tools"></p>
+
+</article>
+        
+
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
