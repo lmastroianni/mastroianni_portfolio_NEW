@@ -108,6 +108,10 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 			
 
 			document.querySelector('.popover #close').addEventListener("click",closePopover);
+
+
+
+			// SORT PORTFOLIO FUNCTIONALITY
     
 
 })();

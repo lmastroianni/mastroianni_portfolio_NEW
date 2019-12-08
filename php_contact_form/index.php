@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact Form With PHP</title>
 </head>
 <body>
 
-<!-- name-field is super important, box area lights up when text is clicked, professionalism -->
+
 
     <form action="data/contact.php" method="post">
     <h1>Contact Us</h1>
