@@ -1,7 +1,7 @@
 <?php
 
 if(empty($_POST)){
-    echo 'No...';
+    echo 'Something went wrong!';
     exit;
 }
 
@@ -11,7 +11,7 @@ $subject = '';
 $message = '';
 $recipient = 'lmastroianni@fanshaweonline.ca';
 
-//some validations
+
 
 if(isset($_POST['name'])){
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -37,9 +37,9 @@ $headers = [
 ];
 
 if(mail($recipient,$subject,$message,$headers)){
-    echo '<p>Thank you for contacting me,' .$name.' You will get a reply within 24 hours</p>';
+    echo '<p>Thanks for the message!' .$name.' I will get back to you as soon as I can</p>';
 }else{
-    echo '<p>We are sorry but the email did not go through</p>';
+    echo '<p>Oops, did not go through!</p>';
 
 }
 
