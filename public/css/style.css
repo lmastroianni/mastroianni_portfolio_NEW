@@ -569,11 +569,22 @@ padding: 10px;
     font-size: 70px;
   }
 
+
+  .boxes{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #box1:nth-child(3)
+  {
+    
+  }
+
+
   #box1 img
   {
-     display: flex;
-     flex-wrap: wrap;
-     width: 30%; 
+    
+     width: 100%;
   }
 
 
