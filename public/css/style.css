@@ -26,7 +26,7 @@
     padding-left: 15px; */
      margin-right: auto;
     margin-left: auto; 
-    max-width: 1260px;
+    /* max-width: 1260px; */
     /* margin: 0 auto; */
     
   }
@@ -87,8 +87,15 @@
   overflow: hidden;
   /* height: 0; */
   text-align: left;
-
 }
+
+/* #burgerCon.slideToggle
+{
+  display: flex;
+  flex: start;
+  display: block;
+  position: fixed;
+} */
 
 /* #mainNav button.expanded
 {
@@ -113,6 +120,8 @@ margin-top: 5px;
 
 #burgerCon.slideToggle
 {
+  display: flex;
+  flex: start;
   display: block;
   position: fixed;
 }
@@ -311,6 +320,8 @@ margin-top: 5px;
 {
     height: 511px;
     background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .contact h3{
@@ -575,6 +586,7 @@ padding: 10px;
     flex-direction: row;
   }
 
+ 
   #box1:nth-child(3)
   {
     
@@ -584,7 +596,7 @@ padding: 10px;
   #box1 img
   {
     
-     width: 100%;
+     width: 50%;
   }
 
 
