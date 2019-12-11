@@ -1,18 +1,10 @@
-//create jar, name jar, place string in jar
-//var firstName = "Marco";
 
-//alert is method(built in function in JS)
-//alert("Hello" + firstName);
-
-//modern JS
-//alert(`Hello ${firstName}`);
-
-//console.log("Hello" + firstName);
 
 console.log("Java Script Linked Up");
 
 
 
+//HAMBURGER TOGGLE
 
 (function(){
 	"use strict";
@@ -29,34 +21,8 @@ console.log("Java Script Linked Up");
 
 	button.addEventListener("click", hamburgerMenu, false);
 
-	/*window.onload = function() {
-  var logo = document.getElementById('logo_middle')
-  logo.style.marginTop = "25px";
-	};
 
-	// Timeline Reveal
-	document.addEventListener('aos:in',  ({ detail }) => {
-  	console.log('animated in', detail);
-});*/
-
-// window.onscroll = function() {myFunction()};
-
-// // Get the header
-// var mainHeader = document.getElementById("mainHeader");
-
-// // Get the offset position of the navbar
-// var sticky = header.offsetTop;
-
-// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     mainHeader.classList.add("sticky");
-//   } else {
-//     mainHeader.classList.remove("sticky");
-//   }
-// }
-
-
+//DEFINE LIGHTBOX (POPOVER)
 const seeMoreButtons = document.querySelectorAll('.see-more'),
         popOver = document.querySelector('.popover');
 
@@ -65,14 +31,14 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 			popOver.querySelector(".Copy").textContent = ` ${data.Copy}`;
 			popOver.querySelector(".Tools").textContent = `Tools: ${data.Tools}`;
             
-            // popOver.querySelector("img").src = `images/${data.graph}`;
+            
     
-            // show the popover
+            // SHOW POPOVER
             popOver.classList.add('show-popover');
 			el.appendChild(popOver);
 
 
-			/* get help with this section */
+			// CLOSE POPOVER
 		}
 
 		function closePopover(){
@@ -98,9 +64,9 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 
 			 const portfolio = document.querySelector(".svg-wrapper");
 
-			// portfolio.addEventListener("click", function() {
-			//   	console.log(this);
-			//  })
+			portfolio.addEventListener("click", function() {
+			  	console.log(this);
+			 })
 
 			
 			seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
@@ -111,7 +77,14 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 
 
 
-			// SORT PORTFOLIO FUNCTIONALITY
+			// ON SCROLL NAV
+
+			
+			
+
+   
+
+
     
 
-})();
+		})();

@@ -3,6 +3,11 @@
   display: none;
 }
 
+html
+{
+  scroll-behavior: smooth;
+}
+
  body{
     margin: 0; 
    /* display: block; */
@@ -26,6 +31,7 @@
     padding-left: 15px; */
      margin-right: auto;
     margin-left: auto; 
+    overflow-x: hidden;
     /* max-width: 1260px; */
     /* margin: 0 auto; */
     
@@ -33,8 +39,9 @@
 
   h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     font-style: italic;
+    text-align: middle;
   }
 
 
@@ -87,6 +94,12 @@
   overflow: hidden;
   /* height: 0; */
   text-align: left;
+  
+}
+
+#burgerMenu
+{
+  margin-right: 100px;
 }
 
 /* #burgerCon.slideToggle
@@ -236,6 +249,12 @@ animation: AnimationName 54s ease infinite;
 }
 
 
+.portfolioPieces h3
+{
+  color: #2C3C50;
+  text-align: center;
+}
+
 
 
 
@@ -259,7 +278,7 @@ animation: AnimationName 54s ease infinite;
 
 .portfolioPieces ul li:hover
 {
-  color: orange;
+  color: #595654;
 }
 
 /*---------ABOUT--------*/
@@ -318,10 +337,10 @@ margin-top: 5px;
 
 .contact
 {
-    height: 511px;
+    height: 391px;
     background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 98%;
+    margin: 0 auto;
 }
 
 .contact h3{
@@ -345,7 +364,6 @@ margin-top: 5px;
   font-size: 15px;
   font-family: 'Averia Serif Libre', cursive;
   color: #53652b;
-  float: left;
 }
 
 .contact-form input textarea
@@ -564,12 +582,12 @@ padding: 10px;
 
   #text h1
   {
-    font-size: 60px;
+    font-size: 75px;
   }
 
   #text h2
   {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -577,7 +595,7 @@ padding: 10px;
 
   #text h1
   {
-    font-size: 70px;
+    font-size: 85px;
   }
 
 
@@ -596,7 +614,7 @@ padding: 10px;
   #box1 img
   {
     
-     width: 50%;
+     width: 80%;
   }
 
 
@@ -664,3 +682,6 @@ padding: 10px;
 /* fill nav */
 
 
+.see-more:hover{
+  background-color: #595654;
+}
