@@ -1,4 +1,15 @@
-body
+@import 'modules/_header';
+@import 'modules/_vars';
+
+h3
 {
-    backgorund-color: black;
+    color: $heading-color;
+    text-align: center;
+    font-size: 60px;
 }
+
+.see-more
+{
+    color: $button-color;
+}
+

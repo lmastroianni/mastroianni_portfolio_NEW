@@ -6,4 +6,6 @@ const config = {
     dbase: "heroku_81eccc719568191"
 }
 
-module.exports = config;
+
+
+

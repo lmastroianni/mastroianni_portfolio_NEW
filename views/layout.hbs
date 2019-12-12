@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" size="16x16" href="images/favcon.ico"/>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="favcon.png"/>
     <!-- import waypoint and greensock -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
@@ -40,14 +41,14 @@
 
                             </div>
 
-                          <nav class="hidden deskNav">
+                          <nav class="hidden deskNav" id="navigation">
                             <h2 class="hidden">Desktop Navigation</h2>
                             <div id="deskCon">
                               <div class="fill">
                             <ul id="deskMenu">
-                                <li><a href="about.html">ABOUT</a></li>
-                                <li><a href="gallery.html">PORTFOLIO</a></li>
-                                <li><a href="contact.html">CONTACT</a></li>
+                                <li><a href="#section-1">PORTFOLIO</a></li>
+                                <li><a href="#section-2">ABOUT</a></li>
+                                <li><a href="#section-3">CONTACT</a></li>
                                 <div class="line"></div>
                           </ul>
                           </div>
@@ -67,7 +68,7 @@
             <section id="text">
 
             <h1>Lucas Mastroianni</h1>
-            <h2>Video & Web Design</h2>
+            <h2 id="section-1">Video & Web Design</h2>
             
             
         
@@ -75,29 +76,23 @@
 
 
         </div>
-        
+
 <body>
     
         
 
-        <section class="portfolioPieces">  
-                <ul>
-                <li>Sort Portfolio:</li>
-         
+        <section class="portfolioPieces" >  
                 
-                       <li>ALL | </li>
-                       <li>VIDEO | </li>
-                       <li>WEB</li>
-                
+                <h3>Portfolio</h3>
 
-                    
-                </ul>
-                        <section class="boxes">
+                        <section class="boxes" >
                           {{#each data}}
-                               <div id="box1">
+                          <div id="section-2">
+                               <div id="box1" >
                               <img src="images/{{Images}}" width="100" height="100" class="responsive {{1Type}}"> 
                               <span class="see-more" class="data" data-target="{{ID}}">Read More</span>
                           <!--type1 is for portoflio functionality-->
+                            </div>
                             </div>
                             
                             {{/each}} 
@@ -120,11 +115,11 @@
         </section>
         </section>
 
-        <section class="about">
+        <section class="about" id="section-2">
             
            <img src="images/lucas.png" height="100%" width="100%" alt="bio image" class="bio" class="responsive">
             <p>A video editor and
-                    web designer from Dorchester, Ontario. I am a huge sports fan a die hard Toronto Maple Leafs fan.
+                    web designer from Dorchester, Ontario. I am a huge sports fan and a die hard Toronto Maple Leafs fan.
                     
                     I love advertisement, media, and ultimately how the human
                     brain perceives these things and how I can use creativity and
@@ -138,7 +133,7 @@
 
         
 
-        <section class="contact">
+        <section class="contact" id="section-3">
             <h3>LET'S CHAT</h3>
             
    <section class="contact-form boxContact">

@@ -1,0 +1,95 @@
+// mobile
+
+#mainNav
+{
+ top: 0;
+ right: 40px;
+ position: fixed; 
+
+}
+
+#mainNav ul
+{
+  list-style-type: none;
+  width: 100%;
+}
+
+
+
+#mainNav ul li a{
+  text-decoration: none;
+  color: #edf6f9;
+}
+
+
+  #mainNav button
+{
+	background: url(..//images/burger.svg) center no-repeat;
+	width: 25px;
+	height: 25px;
+	border: 0px;
+	transition: all 400ms ease;
+  margin-top: 23px;
+  /* margin-left: 55px; */
+}
+
+
+#burgerMenu a
+{
+  display: block;
+  height: 40px;
+  width: 100%;
+  background: #2C3C50;
+  cursor: pointer;
+  overflow: hidden;
+  /* height: 0; */
+  text-align: left;
+  
+}
+
+#burgerMenu
+{
+  margin-right: 100px;
+}
+
+
+#burgerCon
+{
+margin-top: 5px;
+ display: none; 
+}
+
+#burgerCon.slideToggle
+{
+  display: flex;
+  flex: start;
+  display: block;
+  position: fixed;
+}
+
+
+
+
+
+
+// tablet + desktop rules
+
+.mainHeader
+{
+   
+    height: 73px;
+    width: 100%;
+    padding: 0;
+    background-color: #2C3C50;
+    position: fixed;
+}
+
+
+
+.logoHeader
+{
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
