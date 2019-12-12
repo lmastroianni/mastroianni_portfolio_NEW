@@ -35,7 +35,7 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
     
             // SHOW POPOVER
             popOver.classList.add('show-popover');
-			el.appendChild(popOver);
+			// el.appendChild(popOver);
 
 
 			// CLOSE POPOVER
@@ -62,11 +62,11 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 				  .catch((err) => console.log(err));
 			}
 
-			 const portfolio = document.querySelector(".svg-wrapper");
+			//  const portfolio = document.querySelector(".svg-wrapper");
 
-			portfolio.addEventListener("click", function() {
-			  	console.log(this);
-			 })
+			// portfolio.addEventListener("click", function() {
+			//   	console.log(this);
+			//  })
 
 			
 			seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
