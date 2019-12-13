@@ -13,7 +13,7 @@ const sql = require('../utils/sql');
 
 router.get('/', (req, res) => {
 
-  connect.getConnection((err, sql => {  //pool
+  sql.getConnection((err, sql => {  //pool
     if (err) { return console.log(err.message); } //pool
 
   
