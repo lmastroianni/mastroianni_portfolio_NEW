@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
-const sql = require('../utils/sql');
+const connect = require('../utils/sql');
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -39,7 +39,7 @@ router.get('/svgdata/:id', (req, res) => {
 
   console.log("id: ", req.params.id);
 
-  sql.query(query, (err, result) => {
+  connect.query(query, (err, result) => {
     if (err) { console.log(err); } //somethin done broke
 
     console.log(result); // this should be the database row
