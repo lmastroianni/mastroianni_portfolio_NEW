@@ -13,7 +13,7 @@ const sql = require('../utils/sql');
 
 router.get('/', (req, res) => {
 
-  sql.getConnection((err, sql => {  //pool
+  connect.getConnection(err, connection => {  //pool
     if (err) { return console.log(err.message); } //pool
 
   
@@ -23,9 +23,7 @@ router.get('/', (req, res) => {
 
  
 
-  sql.query(query, (err, result) => {
-    sql.release();
-
+  connect.query(query, (err, result) => {
     if (err) { console.log(err); } //somethin done broke
 
     console.log(result); // this should be the database row
