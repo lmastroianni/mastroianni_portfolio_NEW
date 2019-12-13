@@ -12,6 +12,11 @@ const sql = require('../utils/sql');
 // });
 
 router.get('/', (req, res) => {
+
+  connect.getConnection((err, sql => {  //pool
+    if (err) { return console.log(err.message); } //pool
+
+  
   
 
   let query = "SELECT ID, Images FROM tbl_content";
@@ -19,6 +24,8 @@ router.get('/', (req, res) => {
  
 
   sql.query(query, (err, result) => {
+    sql.release();
+
     if (err) { console.log(err); } //somethin done broke
 
     console.log(result); // this should be the database row
@@ -44,5 +51,7 @@ router.get('/svgdata/:id', (req, res) => {
   })
 
 });
+
+})
 
 module.exports = router;

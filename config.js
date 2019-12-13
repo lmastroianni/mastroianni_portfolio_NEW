@@ -6,17 +6,17 @@ const config = {
     dbase: "heroku_81eccc719568191"
 }
 
-module.exports = config;
-
-// const config = {
-//     host: "localhost",
-//     port: 8889, // 3306 for windows/linux or newer macs
-//     uname: "root",
-//     pword: "root", // blank for windows
-//     dbase: "db_final"
-// }
-
 // module.exports = config;
+
+const config = {
+    host: "localhost",
+    port: 8889, // 3306 for windows/linux or newer macs
+    uname: "root",
+    pword: "root", // blank for windows
+    dbase: "db_final"
+}
+
+module.exports = config;
 
 
 

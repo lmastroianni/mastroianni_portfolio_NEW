@@ -7,6 +7,9 @@ const connect = sql.createConnection({
     user: config.uname,
     password: config.pword,
     database: config.dbase
-})
+    connectionLimit : 20,  // pool
+    queueLimit : 100,  //pool
+    waitForConnections : true //pool
+});
 
 module.exports = connect;
