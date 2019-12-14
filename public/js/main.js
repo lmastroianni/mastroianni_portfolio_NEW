@@ -32,7 +32,7 @@ const seeMoreButtons = document.querySelectorAll('.see-more'),
 			popOver.querySelector(".Tools").textContent = `Tools: ${data.Tools}`;
             
             
-    
+   
             // SHOW POPOVER
             popOver.classList.add('show-popover');
 			// el.appendChild(popOver);

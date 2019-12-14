@@ -362,8 +362,8 @@ margin-top: 5px;
 .contact-form label
 {
   font-size: 15px;
-  font-family: 'Averia Serif Libre', cursive;
-  color: #53652b;
+  font-family: 'Open Sans', sans-serif;
+  color: #595654;
 }
 
 .contact-form input textarea

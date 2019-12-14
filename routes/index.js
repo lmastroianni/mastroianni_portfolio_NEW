@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
-const connect = require('../utils/sql');
+const sql = require('../utils/sql');
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -12,18 +12,13 @@ const connect = require('../utils/sql');
 // });
 
 router.get('/', (req, res) => {
-
-  connect.getConnection(err, connection => {  //pool
-    if (err) { return console.log(err.message); } //pool
-
-  
   
 
   let query = "SELECT ID, Images FROM tbl_content";
 
  
 
-  connect.query(query, (err, result) => {
+  sql.query(query, (err, result) => {
     if (err) { console.log(err); } //somethin done broke
 
     console.log(result); // this should be the database row
@@ -39,7 +34,7 @@ router.get('/svgdata/:id', (req, res) => {
 
   console.log("id: ", req.params.id);
 
-  connect.query(query, (err, result) => {
+  sql.query(query, (err, result) => {
     if (err) { console.log(err); } //somethin done broke
 
     console.log(result); // this should be the database row
@@ -49,7 +44,5 @@ router.get('/svgdata/:id', (req, res) => {
   })
 
 });
-
-})
 
 module.exports = router;
