@@ -1,13 +1,14 @@
-# Lucas Mastroianni Portfolio Website -  *Website runs on localhost:3000 for MAC and PC*
+# Lucas Mastroianni Portfolio Website
+*Website runs on localhost:3000 for MAC and PC*
 
 
 Live Site (Heroku) - 
 
 
-Getting Started
+# Getting Started
 These instructions will get you a copy of the project up and running on your local machine
 
-Prerequisites
+# Prerequisites
 You must have the following programs installed:
 
 Node.js
@@ -36,7 +37,7 @@ Once everything is installed, now in terminal within the project type:
 npm start
 Now in the browser of your choice go to: localhost:3000
 
-Built With
+# Built With
 HTML5 - Layout
 CSS3 - Styling
 JaveScript - Functions
@@ -46,5 +47,5 @@ Gulp - JS enhancement
 MySQL - Database
 Express - Handlebars
 
-
+# Authors
 Lucas Mastroianni - Interactive Media Design Student
